@@ -11,7 +11,7 @@ const HomeComponent = () => {
         <div class="row">
           {show?.map((dt) => (
             <div className="col g-4 ">
-              <div class="card p-2 shadow-sm" style={{ width: "20rem" }}>
+              <div class="card mx-auto p-2 shadow-sm" style={{ width: "20rem" }}>
                 <img
                   class="card-img-top"
                   style={{ height: "25rem" }}
