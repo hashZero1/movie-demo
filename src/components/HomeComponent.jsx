@@ -10,7 +10,7 @@ const HomeComponent = () => {
       <div class="container">
         <div class="row">
           {show?.map((dt) => (
-            <div className="col-3 g-4 ">
+            <div className="col g-4 ">
               <div class="card p-2 shadow-sm" style={{ width: "20rem" }}>
                 <img
                   class="card-img-top"
