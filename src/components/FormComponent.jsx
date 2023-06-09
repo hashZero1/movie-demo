@@ -24,7 +24,7 @@ const UserDetailsForm = () => {
     <>
       <button
         type="button"
-        class="btn btn-primary"
+        className="btn btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
@@ -32,7 +32,7 @@ const UserDetailsForm = () => {
       </button>
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -40,22 +40,22 @@ const UserDetailsForm = () => {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div className="modal-dialog">
+          <div className="modal-content">
             <button
               type="button"
-              class="btn-close p-3"
+              className="btn-close p-3"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
-            <div class="modal-body mx-auto">
+            <div className="modal-body mx-auto">
               <img src={data.show.image.medium} alt="" />
               <h2 className="text-center">{data.show.name}</h2>
               <p className="text-center">No. of Tickets: {selectedOption}</p>
             </div>
-            <div class="modal-footer mx-auto">
+            <div className="modal-footer mx-auto">
               <form onSubmit={handleFormSubmit}>
-                <label class="form-label">
+                <label className="form-label">
                   Name:
                   <input
                     className="form-control"
@@ -65,10 +65,10 @@ const UserDetailsForm = () => {
                   />
                 </label>
                 <br />
-                <label class="form-label">
+                <label className="form-label">
                   Select Tickets:
                   <select
-                    class="form-select"
+                    className="form-select"
                     value={selectedOption}
                     onChange={(e) => setSelectedOption(e.target.value)}
                   >
@@ -84,7 +84,7 @@ const UserDetailsForm = () => {
                   <button
                     type="submit"
                     data-bs-dismiss="modal"
-                    class="btn btn-primary mt-2"
+                    className="btn btn-primary mt-2"
                   >
                     Buy Now
                   </button>

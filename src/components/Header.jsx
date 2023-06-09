@@ -3,11 +3,11 @@ import React from "react";
 export const Header = () => {
   return (
     <>
-      <nav class="px-4 navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand">Navbar</a>
-        <form class="form-inline">
+      <nav className="px-4 navbar navbar-light bg-light justify-content-between">
+        <a className="navbar-brand">Navbar</a>
+        <form className="form-inline">
           <input
-            class="form-control mr-sm-2"
+            className="form-control mr-sm-2"
             type="search"
             placeholder="Search"
             aria-label="Search"

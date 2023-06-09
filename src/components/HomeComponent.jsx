@@ -7,26 +7,31 @@ const HomeComponent = () => {
   const { show } = useContext(MovieContext);
   return (
     <div style={{ backgroundColor: "#edebed" }}>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           {show?.map((dt) => (
-            <div className="col g-4 ">
-              <div class="card mx-auto p-2 shadow-sm" style={{ width: "20rem" }}>
+            <div key={dt.show.id} className="col g-4">
+              <div
+                className="card mx-auto p-2 shadow-sm"
+                style={{ width: "20rem" }}
+              >
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   style={{ height: "25rem" }}
                   src={dt.show.image.original}
                   alt={dt.show.name}
                 />
-                <div class="card-body">
+                <div className="card-body">
                   <Link
-                    class="text-decoration-none text-dark"
+                    className="text-decoration-none text-dark"
                     key={dt.show.id}
                     to={`/details/${dt.show.id}`}
                   >
                     <h4>{dt.show.name}</h4>
-                    <p class="card-text">{dt.show.language}</p>
-                    <p class="card-text">Release Date: {dt.show.premiered}</p>
+                    <p className="card-text">{dt.show.language}</p>
+                    <p className="card-text">
+                      Release Date: {dt.show.premiered}
+                    </p>
                   </Link>
                 </div>
               </div>
