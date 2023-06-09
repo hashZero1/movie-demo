@@ -51,7 +51,7 @@ const UserDetailsForm = () => {
             <div className="modal-body mx-auto">
               <img src={data.show.image.medium} alt="" />
               <h2 className="text-center">{data.show.name}</h2>
-              <p className="text-center">No. of Tickets: {selectedOption}</p>
+              <p className="text-center">No. of Tickets: 0{selectedOption}</p>
             </div>
             <div className="modal-footer mx-auto">
               <form onSubmit={handleFormSubmit}>
