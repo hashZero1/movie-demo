@@ -4,7 +4,7 @@ import axios from "axios";
 export const MovieContext = createContext();
 
 export const MovieProvider = ({ children }) => {
-  const [show, setShow] = useState(null);
+  const [show, setShow] = useState();
 
   useEffect(() => {
     async function fetchShow() {
